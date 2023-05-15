@@ -1,0 +1,6 @@
+{
+"port": 8888,
+
+"workers": 0,
+"endpointDir" : "/mnt/shareddisk/datashield/SophiaWeb/src/endpoints"
+}
