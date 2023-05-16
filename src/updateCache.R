@@ -4,7 +4,7 @@ library(dsResource)   ### dsrSomething
 library(dsBaseClient) ### ds.something
 library(magrittr)
 library(jsonlite)
-setwd('/mnt/shareddisk/datashield/SophiaWeb/')
+setwd('/mnt/shareddisk/datashield/SophiaWeb/src')
 source('appLogin.R')
 source('prepareData.R')
 source('oneVarStats.R')
