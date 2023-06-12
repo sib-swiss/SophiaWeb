@@ -3,7 +3,8 @@ library(RestRserve)
 library(magrittr)
 
 loadApp <- function(){
-  app <-  Application$new(content_type = "application/json")
+  app <-  Application$new(middleware = list(CORSMiddleware$new()), content_type = "application/json")
+  #app <-  Application$new( content_type = "application/json")
   
   # load the enpoint descriptions in a sandbox env:
   temp <- new.env()
