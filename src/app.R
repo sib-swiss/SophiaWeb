@@ -27,8 +27,9 @@ MyCORSMw <- R6::R6Class(
             # response successful
             response$status_code < 300) {
           response$set_header("Access-Control-Allow-Origin", response$get_header("Access-Control-Allow-Origin", "*"))
-          response$set_header("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE")
+          response$set_header("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE, PATCH")
           response$set_header("Access-Control-Allow-Headers", "Origin, Content-Type, Accept, Authorization, X-Request-With")
+          response$set_header("Access-Control-Allow-Credentials", "true")
         }
         invisible(TRUE)
       }
@@ -81,7 +82,7 @@ app <- loadApp()
 #  method = "GET"
 #)
 
-# x <- app$process_request(req)
+ #x <- app$process_request(req)
 ######################################
 backend <- BackendRserve$new()
 backend$start(app, http_port = config$port)
