@@ -8,7 +8,7 @@ setwd('/mnt/shareddisk/datashield/SophiaWeb/src')
 source('appLogin.R')
 source('prepareData.R')
 source('oneVarStats.R')
-confFile <- '../config/config.connect'
+confFile <- '../config/config.one.json'
 config <- readChar(confFile, file.info(confFile)$size) %>%
   gsub('(?<=:)\\s+|(?<=\\{)\\s+|(?<=,)\\s+|(?<=\\[)\\s+','',., perl = TRUE) %>%
   fromJSON()

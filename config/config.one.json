@@ -1,0 +1,10 @@
+{
+"loginData": [
+	{"server":"abos", "url": "https://sophia-fdb.vital-it.ch/abos", "options":"list(ssl_verifyhost=0,ssl_verifypeer=0)"}
+	],
+
+"appUser": "idragan",
+"resourceMap":{
+         "abos":["abos.db"]
+	}
+}

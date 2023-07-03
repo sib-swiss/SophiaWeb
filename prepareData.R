@@ -10,9 +10,9 @@
   dsqLoad(symbol= 'measurement',
                    domain = 'concept_name',
                    query_name = 'measurement',
-                   where_clause = 'value_as_number is not null and measurement_date is not null',
+                   where_clause = 'value_as_number is not null and measurement_date is not null and measurement_type_concept_id not in (268435456, 268435457, 268435458)',
                   # row_limit =  6000000,
-                    row_limit =  1000000, ## dev only
+                  #  row_limit =  1000000, ## dev only
                    union = TRUE,
                    datasources = opals)
   dsqLoad(symbol= 'person',
