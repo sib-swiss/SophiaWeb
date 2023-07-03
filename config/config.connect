@@ -1,0 +1,16 @@
+{
+"loginData": [
+	{"server":"sib", "url": "https://sophia-fdb.vital-it.ch/sib", "options":"list(ssl_verifyhost=0,ssl_verifypeer=0)"},
+	{"server":"nn", "url": "https://sophia-fdb.vital-it.ch/nn", "options":"list(ssl_verifyhost=0,ssl_verifypeer=0)"},
+	{"server":"nok", "url": "https://sophia-fdb.vital-it.ch/nok", "options":"list(ssl_verifyhost=0,ssl_verifypeer=0)"},
+	{"server":"extend", "url": "https://sophia-fdb.vital-it.ch/extend", "options":"list(ssl_verifyhost=0,ssl_verifypeer=0)"}
+	],
+
+"appUser": "idragan",
+"resourceMap":{
+	 "sib":["accelerate.db", "rewind.db", "colaus.db"],
+	 "nn":["adjunct.db", "scaledm.db","scalem.db", "scaleop.db","scalesa.db"],
+	 "extend":["extend.db"],
+         "nok":["nok.db"]
+	}
+}
