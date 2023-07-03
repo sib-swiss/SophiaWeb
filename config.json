@@ -1,0 +1,10 @@
+{
+"loginData": [
+	{"server":"sib", "url": "https://sophia-fdb.vital-it.ch/sib", "options":"list(ssl_verifyhost=0,ssl_verifypeer=0)"}
+	],
+
+"appUser": "idragan",
+"resourceMap":{
+	 "sib":["accelerate.db", "rewind.db", "colaus.db"]
+	}
+}

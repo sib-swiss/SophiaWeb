@@ -1,0 +1,14 @@
+{
+"loginData": [
+	{"server":"nok", "url": "https://sophia-fdb.vital-it.ch/nok", "options":"list(ssl_verifyhost=0,ssl_verifypeer=0)"},
+	{"server":"nn", "url": "https://sophia-fdb.vital-it.ch/nn", "options":"list(ssl_verifyhost=0,ssl_verifypeer=0)"},
+	{"server":"sib", "url": "https://sophia-fdb.vital-it.ch/sib", "options":"list(ssl_verifyhost=0,ssl_verifypeer=0)"}
+	],
+
+"appUser": "idragan",
+"resourceMap":{
+	"nok":["nok.db"],
+	 "sib":["accelerate.db", "rewind.db", "colaus.db"],
+	"nn":["scaledm.db", "scalem.db", "scalesa.db", "adjunct.db", "scaleop.db"]
+	}
+}
