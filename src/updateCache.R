@@ -26,9 +26,14 @@ datashield.symbols(opals)
 sts <- sapply(names(varmap), function(x){
   if(varmap[[x]]$type == 'number'){
     sapply(varmap[[x]]$cohorts, function(y){
+      f <- substr(x,1,1)
+      if(!is.na(as.numeric(f))){
+        x <- paste0('x.',x)
+      }
+      print(x)
       tryCatch(oneVarStats(x,opals[y]), error = function(e){
         datashield.errors()
-        datashield.logout(opals[y])
+        datashield.rm(opals[y], x)
       })
     }, simplify = FALSE)
   }

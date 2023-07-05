@@ -7,12 +7,17 @@
   # load the 2 data frames
   ################ !!!!!!!!!!!!!!!!!!!!!! ############### only for development!!!!!
   ##########################################
-  tryCatch(dsqLoad(symbol= 'measurement',
+  
+   if('tayside_fife_t1t2.hic_sophia' %in% names(opals)){
+    dsrSetDbParam('tayside_fife_t1t2_hic_sophia', list(parallel_setup_cost = 100 ), datasources = opals['tayside_fife_t1t2.hic_sophia'])
+    dsrSetDbParam('tayside_fife_t1t2_hic_sophia', list(parallel_tuple_cost = 0.01), datasources = opals['tayside_fife_t1t2.hic_sophia'])
+   }
+   tryCatch(dsqLoad(symbol= 'measurement',
                    domain = 'concept_name',
                    query_name = 'measurement',
                    where_clause = 'value_as_number is not null and measurement_date is not null',
                   # row_limit =  6000000,
-                    row_limit =  1000000, ## dev only
+                    row_limit =  20000000,
                    union = TRUE,
                    datasources = opals), error = function(e){
                      stop(datashield.errors())
