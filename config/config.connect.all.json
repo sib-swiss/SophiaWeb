@@ -3,6 +3,8 @@
 	{"server":"sib", "url": "https://sophia-fdb.vital-it.ch/sib", "options":"list(ssl_verifyhost=0,ssl_verifypeer=0)"},
 	{"server":"nn", "url": "https://sophia-fdb.vital-it.ch/nn", "options":"list(ssl_verifyhost=0,ssl_verifypeer=0)"},
 	{"server":"nok", "url": "https://sophia-fdb.vital-it.ch/nok", "options":"list(ssl_verifyhost=0,ssl_verifypeer=0)"},
+	{"server":"ts", "url": "https://sophia-fdb.vital-it.ch/ts", "options":"list(ssl_verifyhost=0,ssl_verifypeer=0)"},
+	{"server":"dpv", "url": "https://sophia-fdb.vital-it.ch/dpv", "options":"list(ssl_verifyhost=0,ssl_verifypeer=0)"},
 	{"server":"extend", "url": "https://sophia-fdb.vital-it.ch/extend", "options":"list(ssl_verifyhost=0,ssl_verifypeer=0)"}
 	],
 
@@ -11,6 +13,8 @@
 	 "sib":["accelerate.db", "rewind.db", "colaus.db"],
 	 "nn":["adjunct.db", "scaledm.db","scalem.db", "scaleop.db","scalesa.db"],
 	 "extend":["extend.db"],
-         "nok":["nok.db"]
+         "nok":["nok.db"],
+	 "ts":["tayside_fife_t1t2.hic_sophia"],
+	 "dpv":["sophia_apv.db", "sophia_dpv.db"]
 	}
 }
